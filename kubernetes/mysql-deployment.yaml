@@ -28,7 +28,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: demo-app-mysql
+  name: demo-app-mysql # mysql-host-url
   labels:
     app: demo-app
 spec:

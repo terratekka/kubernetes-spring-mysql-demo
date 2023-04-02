@@ -18,3 +18,23 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL5Dialect
+
+---
+spring:
+  config:
+    activate:
+      on-profile: test
+  datasource:
+    url: jdbc:h2:mem:p360_am;DB_CLOSE_DELAY=-1;MODE=MSSQLServer;INIT=CREATE SCHEMA IF NOT EXISTS DBO
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+
+  jpa:
+    generate-ddl: true
+    database-platform: org.hibernate.dialect.H2Dialect
+    properties:
+      hibernate:
+        default_catalog: p360_am
+        default_schema: dbo
+      javax.persistence.schema-generation.database.action: none

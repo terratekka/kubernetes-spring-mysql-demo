@@ -33,3 +33,11 @@ build/
 .vscode/
 
 .history/
+/terraform2/.terraform/
+/terraform2/.terraform.lock.hcl
+/terraform2/terraform.tfstate
+/terraform2/terraform.tfstate.backup
+/terraform/.terraform/
+/terraform/.terraform.lock.hcl
+/terraform/terraform.tfstate
+/terraform/terraform.tfstate.backup

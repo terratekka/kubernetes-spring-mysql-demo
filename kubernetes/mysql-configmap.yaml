@@ -3,6 +3,6 @@ kind: ConfigMap
 metadata:
   name: mysql-config-map
 data:
-  mysql-server: demo-app-mysql
+  mysql-server: demo-app-mysql # mysql-host-url
   mysql-database-name: demoDb
   mysql-user-username: myUser
